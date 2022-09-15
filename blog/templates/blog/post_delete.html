@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    New Post
+{% endblock %}
+
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <h2>Are You Sure?</h2>
+        <p>Are you sure you wants to delete {{ post.title }} permanently?</p>
+        <input type="submit" class="btn btn-danger" value="Yes, Delete">
+    </form>
+{% endblock %}
