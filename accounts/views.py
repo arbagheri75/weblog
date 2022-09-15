@@ -5,4 +5,4 @@ from .forms import CustomUserCreationForm
 
 class SignUpView(generic.CreateView):
     form_class = CustomUserCreationForm
-    template_name = 'registration/login.html'
+    template_name = 'registration/signup.html'
